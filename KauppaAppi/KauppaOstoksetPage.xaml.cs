@@ -320,10 +320,7 @@ namespace KauppaAppi
                 if (success)  // Jos onnistuu näytetään alert viesti
                 {
                     await DisplayAlert("Valmis!", "Tuote on nyt lisätty kauppalistalle", "Sulje");
-                    //await Navigation.PushAsync(new KauppaOstoksetPage(pyid)); //Mennään takaisin kauppaostokset sivuun
-                    LoadDataFromRestAPI();
-                    
-
+                    LoadDataFromRestAPI(); //ajaa ylläolevan metodin (lataa sivun tietoineen)
                 }
 
                 else
